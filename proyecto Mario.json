@@ -1,0 +1,92 @@
+<!DOCTYPE html> 
+<html> 
+<body> 
+<h2> Prueba Psicometricas</h2> 
+<p id="demo"></p> <script>
+var n =1;
+var suma=0;
+var num,num2,num3;
+var num4,num5,num6;
+var num7,num8,num9,num10
+var Ins;
+var nombreEmpleado;
+var ap=0,prom=0;
+
+do{
+Ins = prompt ('Las Instrucciones son responder 1,2 o 3 para cada pregunta oprimir enter y seguir asi el programa no maneja letras en la sección de preguntas---oprime cualquier tecla diferente de 1','');
+}while(Ins==1);
+nombreEmpleado = prompt ('Como se llama el empleado','');
+
+
+
+do { 
+num = prompt ('1.-¿Al llegar un cliente como debe de recibirlo?1 Ignorarlo 2 Saludarlo  3 No hacer nada','');
+} while (num<1 || num>3 || num==null );
+//2
+if (num==2){ap++}
+
+do {
+num2 = prompt ('2.-¿Cómo debe ser el saludo? 1 Que onda 2 Hola buenas tarde 3 Hola buena tarde bienvenido','');
+} while (num2<1 || num2>3 || num2==null);
+//3
+if (num2==3){ap++}
+
+do {
+num3 = prompt ('3.-¿Cuándo este atendiendo al cliente que debe de hacer? 1 Los pendientes 2 Atender al cliente  3 Estar haciendo alguna otra cosa ','');
+} while (num3<1 || num3>3 || num3==null);
+//2
+if (num3==2){ap++}
+
+do {
+num4 = prompt ('4.-¿Sí el cliente se enoja que debe de hacer?  1 Mantener la calma y tranquilizar al cliente 2 Gritar  3 Levantarse de su lugar e irse ','');
+} while (num4<1 || num4>3 || num4==null);
+//1
+if (num4==1){ap++}
+
+
+
+do {
+num5 = prompt ('5.- ¿Sí un cliente de atrás quiere ser atendido antes que debe de hacer?  1 Atender al segundo cliente 2 Seguir atendiendo al cliente 3 Hacer le ver al segundo cliente que es el siguiente en ser atendido ','');
+} while (num5<1 || num5>3 || num5==null);
+//3
+if (num5==3){ap++}
+
+do {
+num6 = prompt ('6.- ¿Si llega un cliente con capacidades diferentes que debe de hacer? 1 Reírse de el 2 Tratarlo como a cualquier persona mas 3 Tratarlo con respeto y atenderlo considerando sus capacidades diferentes','');
+} while (num6<1 || num6>3 || num6==null);
+//3
+if (num6==3){ap++}
+
+do {
+num7 = prompt ('7.- ¿Si un cliente te agrede que debes de hacer? 1Guardar la calma y tranquilizar al cliente 2 Agredirlo 3 Gritar o llorar ','');
+} while (num7<1 || num7>3 || num7==null);
+//1
+if (num7==1){ap++}
+
+do {
+num8 = prompt ('8.- ¿Si un cliente te pide tu teléfono personal que debes de hacer? 1Darle tu numero personal 2 Hacer le ver que no es apropiado 3 Darle un numero falso','');
+} while (num8<1 || num8>3 || num8==null);
+//2
+if (num8==2){ap++}
+
+do {
+num9 = prompt ('9.- ¿Si un cliente se te  insinúa que debes hacer? 1 Hacerle ver que también te gusta 2 Decirle que no te gusta y que te deje en paz  3 Hacerle ver que es inapropiado','');
+} while (num9<1 || num9>3 || num9==null);
+//3
+if (num9==3){ap++}
+
+do {
+num10 = prompt ('10.- ¿Si un cliente presenta un problema de salud cuando lo estas atendiendo que debes hacer? 1 Nada 2 Marcar al 911 y seguir con el siguiente cliente 3 Marcar al 911 y tratar de ayudar al cliente','');
+} while (num10<1 || num10>3 || num10==null);
+//3
+if (num10==3){ap++}
+
+ap = parseInt(ap);
+
+prom=ap/10*10;
+
+if (ap<=6){document.write("La Persona con por nombre"+"  "+nombreEmpleado +"  "+ "No pasa el examen con un puntaje de:"+ap+" "+"y un promedio de:"+prom);}
+else{
+document.write("Felicidades"+"  "+nombreEmpleado +"  "+ "paso el examen con un puntaje de:"+ap+" "+"y un pomedio de:"+prom);}
+</script>
+ </body>
